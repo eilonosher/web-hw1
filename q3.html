@@ -1,13 +1,62 @@
 <html>
-    <head>
-        <title>
-            q3
-        </title>
-    </head>
-    <body style="margin:0; padding:0">
-        <div style="width: 50%;height: 50%;float: left;background-color: maroon;"></div>
-        <div style="width: 50%;height: 50%;float: right;background-color: darkblue;"></div>
-        <div style="width: 50%;height: 50%;float: left;background-color: olive;"></div>
-        <div style="width: 50%;height: 50%;float: right;background-color: turquoise;"></div>
-    </body>
+
+<head>
+    <title>
+        q3
+    </title>
+    <style>
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .fullSize {
+            height: 100%;
+            width: 100%;
+        }
+
+        .fullScreen {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .halfSize {
+            height: 50%;
+            width: 50%;
+        }
+
+        .floatRight {
+            float: right;
+        }
+
+        .initScreen {
+            margin: 0;
+            overflow: hidden;
+            padding: 0
+        }
+    </style>
+</head>
+
+<body class="initScreen">
+    <div class="blue fullScreen">
+        <div class="red halfSize floatRight">
+            <div class="green halfSize floatRight">
+                <div class="blue halfSize floatRight">
+                    <div class="red halfSize floatRight">
+                        <div class="green halfSize floatRight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
