@@ -1,3 +1,4 @@
+package h;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -35,13 +36,13 @@ public class ScreenColors {
 			int modeNumber = i % 3;
 			switch (modeNumber) {
 			case 0:
-				file.write("<td style=\"height: 100vh;background-color: blue;\"></td>"+"\r\n");
+				file.write("\t\t\t\t\t\t\t<td style=\"height: 100vh;background-color: blue;\"></td>"+"\r\n");
 				break;
 			case 1:
-				file.write("<td style=\"height: 100vh;background-color:red;\"></td>"+"\r\n");
+				file.write("\t\t\t\t\t\t\t<td style=\"height: 100vh;background-color:red;\"></td>"+"\r\n");
 				break;
 			case 2:
-				file.write("<td style=\"height: 100vh;background-color: green;\"></td>"+"\r\n");
+				file.write("\t\t\t\t\t\t\t<td style=\"height: 100vh;background-color: green;\"></td>"+"\r\n");
 				break;
 
 			default:
@@ -71,10 +72,10 @@ public class ScreenColors {
 	}
 
 	private void writeEndData() throws IOException {
-		file.write("</tr>\r\n" + 
+		file.write("\t\t\t\t\t\t</tr>\r\n" + 
 				"                    </tbody>\r\n" + 
-				"                </table>\r\n" + 
-				"    </body>\r\n" + 
+				"            </table>\r\n" + 
+				"     </body>\r\n" + 
 				"</html>");
 	}
 
